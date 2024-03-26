@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;1,700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>portfolio</title>
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-body {
+            background: linear-gradient(to left, #4dabf7, aquamarine);
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            height: 62px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 26px;
+            font-weight: 600;
+            padding: 16px 25px;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        nav {
+            margin-right: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 28px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            color: #fd0606;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            padding: 40px;
+            justify-content: space-around;
+            /* margin-right: 200px; */
+        }
+
+        .info {
+            font-size: 28px;
+            font-weight: 700;
+
+        }
+
+        img {
+            height: 569px;
+            width: 459px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 250px;
+            box-shadow: 50px -10px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="container">
+            <div class="logName">
+                Portfolio...
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#skills"> Skills </a></li>
+                    <li><a href="#work"> Work </a></li>
+                    <li><a href="#resume"> Resume </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="home" id="home">
+            <div class="info">
+                <h2> hello, I'm Vivekanand Kurane</h2><br>
+                <h2> Web Developer </h2>
+            </div>
+
+            <img src="download.jpg"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                alt="My-Pic.jpg">
+        </div>
+
+        <div class="skills" id="skills" style="background-color: aquamarine; height: 100vh; width: auto;">
+            SKILLS DIV
+        </div>
+
+        <div class="work" id="work" style="background-color: rgb(222, 80, 120); height: 100vh; width: auto;">
+            WORK DIV
+        </div>
+
+        <div class="resume" id="resume" style="background-color: rgb(127, 144, 255); height: 100vh; width: auto;">
+            RESUME DIV
+        </div>
+
+        <div class="contact" id="contact" style="background-color: rgb(255, 127, 244); height: 100vh; width: auto;">
+            CONTACT DIV
+        </div>
+
+        <footer style="width: auto; height: 320px; background-color: yellow;">
+            FOOTER 
+        </footer>
+
+    </div>
+    
+
+
+</body>
+
+</html>
